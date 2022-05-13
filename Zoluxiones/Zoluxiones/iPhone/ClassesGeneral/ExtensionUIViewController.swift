@@ -35,4 +35,7 @@ extension UIViewController : NVActivityIndicatorViewable {
         stopAnimating()
     }
     
+    @IBAction func btnExitGeneral(_ sender : UIButton){
+        self.navigationController?.popViewController(animated: true)
+    }
 }

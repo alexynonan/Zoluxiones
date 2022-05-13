@@ -52,6 +52,7 @@ class CDMovie: NSObject {
         
         let fetch : NSFetchRequest<MovieBD> = MovieBD.fetchRequest()
         
+        //order Date
         let sortName = NSSortDescriptor(key: "release_date", ascending: true)
         
         fetch.sortDescriptors = [sortName]

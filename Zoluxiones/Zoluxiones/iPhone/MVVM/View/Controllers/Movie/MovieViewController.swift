@@ -22,15 +22,18 @@ class MovieViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let controller = segue.destination as? MovieDetailViewController{
+            controller.objMovieDetail = sender as? MovieBE            
+        }
     }
-    */
+    
 
 }
 
@@ -63,7 +66,7 @@ extension MovieViewController {
         let arrayMovie = self.modelMovie.arrayMovies ?? []
         
         self.dataSourceMovie = MoviewCollectionViewDataSource(cellIdentifier: identifier , items: arrayMovie , configureCell: { cell, index in
-            
+            self.performSegue(withIdentifier: "MovieDetailViewController", sender: cell.objBE)
         })
         
         DispatchQueue.main.async {

@@ -39,6 +39,9 @@
                                 <state key="normal" title="Ingresar">
                                     <color key="titleColor" red="0.0" green="0.14615202890000001" blue="0.4436996922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnLoginSession:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oie-XG-sf9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

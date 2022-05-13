@@ -30,8 +30,8 @@ extension LoginViewController{
     
     private func loadLogin(){
         self.modelLogin = LoginViewModel()
-        self.txtUser.text = "Admin"
-        self.txtPassword.text = "Password*123"
+//        self.txtUser.text = "Admin"
+//        self.txtPassword.text = "Password*123"
     }
     
     private func selectLogin(){

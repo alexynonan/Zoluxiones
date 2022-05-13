@@ -34,6 +34,8 @@
 		95A62637282F142F007A425E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62633282F142F007A425E /* LoginViewModel.swift */; };
 		95A62638282F142F007A425E /* MoviewCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */; };
 		95A62639282F142F007A425E /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62636282F142F007A425E /* MovieViewModel.swift */; };
+		95A6263C282F1994007A425E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6263B282F1994007A425E /* MovieDetailViewController.swift */; };
+		95A6263E282F19B2007A425E /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6263D282F19B2007A425E /* MovieDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		95A62633282F142F007A425E /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviewCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		95A62636282F142F007A425E /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		95A6263B282F1994007A425E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		95A6263D282F19B2007A425E /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +227,7 @@
 			children = (
 				95A62618282F0ECC007A425E /* Movie.storyboard */,
 				95A6261E282F0F61007A425E /* MovieViewController.swift */,
+				95A6263A282F173B007A425E /* DetailMovie */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -274,8 +279,17 @@
 			children = (
 				95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */,
 				95A62636282F142F007A425E /* MovieViewModel.swift */,
+				95A6263D282F19B2007A425E /* MovieDetailViewModel.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		95A6263A282F173B007A425E /* DetailMovie */ = {
+			isa = PBXGroup;
+			children = (
+				95A6263B282F1994007A425E /* MovieDetailViewController.swift */,
+			);
+			path = DetailMovie;
 			sourceTree = "<group>";
 		};
 		FDCA3576E7B109AEF771A655 /* Pods */ = {
@@ -407,6 +421,7 @@
 				95A62629282F11DF007A425E /* MovieWS.swift in Sources */,
 				95A62624282F11CB007A425E /* LoginBL.swift in Sources */,
 				95A6262C282F124C007A425E /* CDMovie.swift in Sources */,
+				95A6263C282F1994007A425E /* MovieDetailViewController.swift in Sources */,
 				95A6261D282F0F30007A425E /* LoginViewController.swift in Sources */,
 				95A62625282F11CB007A425E /* MovieBL.swift in Sources */,
 				95A6260C282F0CD8007A425E /* ExtensionDate.swift in Sources */,
@@ -422,6 +437,7 @@
 				95A6260D282F0CD8007A425E /* WebServicesURL.swift in Sources */,
 				95A6262E282F1272007A425E /* MovieBE.swift in Sources */,
 				95A62610282F0CD8007A425E /* MessageAlert.swift in Sources */,
+				95A6263E282F19B2007A425E /* MovieDetailViewModel.swift in Sources */,
 				95A62639282F142F007A425E /* MovieViewModel.swift in Sources */,
 				95A6260E282F0CD8007A425E /* ExtensionImage.swift in Sources */,
 				95A62611282F0CD8007A425E /* Closures.swift in Sources */,
@@ -570,6 +586,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Ligth;
@@ -600,6 +617,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Ligth;
