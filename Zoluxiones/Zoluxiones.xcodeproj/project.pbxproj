@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5388EFA981AD09FD61BB15E3 /* Pods_Zoluxiones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59829F2B7385736E0ACD6423 /* Pods_Zoluxiones.framework */; };
 		95A625E9282F09D4007A425E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625E8282F09D4007A425E /* AppDelegate.swift */; };
 		95A625EB282F09D4007A425E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625EA282F09D4007A425E /* SceneDelegate.swift */; };
 		95A625ED282F09D4007A425E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625EC282F09D4007A425E /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10D45B3BB5543E288608A967 /* Pods-Zoluxiones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.debug.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.debug.xcconfig"; sourceTree = "<group>"; };
+		59829F2B7385736E0ACD6423 /* Pods_Zoluxiones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoluxiones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A625E5282F09D4007A425E /* Zoluxiones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoluxiones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A625E8282F09D4007A425E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A625EA282F09D4007A425E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		95A625F4282F09D6007A425E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A625F7282F09D6007A425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A625F9282F09D6007A425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5388EFA981AD09FD61BB15E3 /* Pods_Zoluxiones.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310F6CBFB3C28C79C6B604CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59829F2B7385736E0ACD6423 /* Pods_Zoluxiones.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95A625DC282F09D4007A425E = {
 			isa = PBXGroup;
 			children = (
 				95A625E7282F09D4007A425E /* Zoluxiones */,
 				95A625E6282F09D4007A425E /* Products */,
+				FDCA3576E7B109AEF771A655 /* Pods */,
+				310F6CBFB3C28C79C6B604CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,15 @@
 			path = Zoluxiones;
 			sourceTree = "<group>";
 		};
+		FDCA3576E7B109AEF771A655 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10D45B3BB5543E288608A967 /* Pods-Zoluxiones.debug.xcconfig */,
+				BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95A625FC282F09D6007A425E /* Build configuration list for PBXNativeTarget "Zoluxiones" */;
 			buildPhases = (
+				4ACD8128400BADA7C7633C1F /* [CP] Check Pods Manifest.lock */,
 				95A625E1282F09D4007A425E /* Sources */,
 				95A625E2282F09D4007A425E /* Frameworks */,
 				95A625E3282F09D4007A425E /* Resources */,
+				C6A9047AB2DCE631A2D9A896 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ACD8128400BADA7C7633C1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zoluxiones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A9047AB2DCE631A2D9A896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95A625E1282F09D4007A425E /* Sources */ = {
@@ -286,6 +354,7 @@
 		};
 		95A625FD282F09D6007A425E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D45B3BB5543E288608A967 /* Pods-Zoluxiones.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,8 +366,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +383,7 @@
 		};
 		95A625FE282F09D6007A425E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,8 +395,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
