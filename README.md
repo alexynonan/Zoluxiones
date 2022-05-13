@@ -1,5 +1,5 @@
 # Zoluxiones
-Desafío iOS Zoluxiones Peliculas
+Desafío iOS Peliculas
 
 ## Instalación
 
