@@ -19,5 +19,7 @@ struct Closures {
     typealias SuccessResponse           = (_ response       : JSON,_ status : Int) -> Void
     typealias FailureResponse           = (_ errorMessage   : String,_ status : Int) -> Void
     
-
+    //MARK: Movie
+    typealias Movies                    = (_ arrayMovie     : [MovieBE],_ page : Int) -> Void
+    typealias Movie                     = (_ objMovie       : MovieBE) -> Void
 }

@@ -25,6 +25,12 @@
 		95A62619282F0ECC007A425E /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A62618282F0ECC007A425E /* Movie.storyboard */; };
 		95A6261D282F0F30007A425E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6261C282F0F30007A425E /* LoginViewController.swift */; };
 		95A6261F282F0F61007A425E /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6261E282F0F61007A425E /* MovieViewController.swift */; };
+		95A62624282F11CB007A425E /* LoginBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62622282F11CB007A425E /* LoginBL.swift */; };
+		95A62625282F11CB007A425E /* MovieBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62623282F11CB007A425E /* MovieBL.swift */; };
+		95A62627282F11D5007A425E /* ValidationNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62626282F11D5007A425E /* ValidationNetwork.swift */; };
+		95A62629282F11DF007A425E /* MovieWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62628282F11DF007A425E /* MovieWS.swift */; };
+		95A6262C282F124C007A425E /* CDMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6262B282F124C007A425E /* CDMovie.swift */; };
+		95A6262E282F1272007A425E /* MovieBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6262D282F1272007A425E /* MovieBE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,12 @@
 		95A62618282F0ECC007A425E /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
 		95A6261C282F0F30007A425E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95A6261E282F0F61007A425E /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		95A62622282F11CB007A425E /* LoginBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBL.swift; sourceTree = "<group>"; };
+		95A62623282F11CB007A425E /* MovieBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBL.swift; sourceTree = "<group>"; };
+		95A62626282F11D5007A425E /* ValidationNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationNetwork.swift; sourceTree = "<group>"; };
+		95A62628282F11DF007A425E /* MovieWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWS.swift; sourceTree = "<group>"; };
+		95A6262B282F124C007A425E /* CDMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovie.swift; sourceTree = "<group>"; };
+		95A6262D282F1272007A425E /* MovieBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBE.swift; sourceTree = "<group>"; };
 		BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +151,9 @@
 		95A62602282F0C7E007A425E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				95A6262A282F1240007A425E /* CoreData */,
+				95A62621282F11AF007A425E /* WS */,
+				95A62620282F11AB007A425E /* BL */,
 				95A62604282F0CA5007A425E /* CSWebServices.swift */,
 			);
 			path = API;
@@ -157,6 +172,7 @@
 		95A62612282F0DDC007A425E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				95A6262D282F1272007A425E /* MovieBE.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +217,32 @@
 				95A6261E282F0F61007A425E /* MovieViewController.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		95A62620282F11AB007A425E /* BL */ = {
+			isa = PBXGroup;
+			children = (
+				95A62626282F11D5007A425E /* ValidationNetwork.swift */,
+				95A62622282F11CB007A425E /* LoginBL.swift */,
+				95A62623282F11CB007A425E /* MovieBL.swift */,
+			);
+			path = BL;
+			sourceTree = "<group>";
+		};
+		95A62621282F11AF007A425E /* WS */ = {
+			isa = PBXGroup;
+			children = (
+				95A62628282F11DF007A425E /* MovieWS.swift */,
+			);
+			path = WS;
+			sourceTree = "<group>";
+		};
+		95A6262A282F1240007A425E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				95A6262B282F124C007A425E /* CDMovie.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		FDCA3576E7B109AEF771A655 /* Pods */ = {
@@ -329,15 +371,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A6261F282F0F61007A425E /* MovieViewController.swift in Sources */,
+				95A62629282F11DF007A425E /* MovieWS.swift in Sources */,
+				95A62624282F11CB007A425E /* LoginBL.swift in Sources */,
+				95A6262C282F124C007A425E /* CDMovie.swift in Sources */,
 				95A6261D282F0F30007A425E /* LoginViewController.swift in Sources */,
 				95A625ED282F09D4007A425E /* ViewController.swift in Sources */,
+				95A62625282F11CB007A425E /* MovieBL.swift in Sources */,
 				95A6260C282F0CD8007A425E /* ExtensionDate.swift in Sources */,
 				95A62605282F0CA5007A425E /* CSWebServices.swift in Sources */,
+				95A62627282F11D5007A425E /* ValidationNetwork.swift in Sources */,
 				95A6260F282F0CD8007A425E /* ExtensionUIViewController.swift in Sources */,
 				95A625E9282F09D4007A425E /* AppDelegate.swift in Sources */,
 				95A625EB282F09D4007A425E /* SceneDelegate.swift in Sources */,
 				95A625F3282F09D4007A425E /* Zoluxiones.xcdatamodeld in Sources */,
 				95A6260D282F0CD8007A425E /* WebServicesURL.swift in Sources */,
+				95A6262E282F1272007A425E /* MovieBE.swift in Sources */,
 				95A62610282F0CD8007A425E /* MessageAlert.swift in Sources */,
 				95A6260E282F0CD8007A425E /* ExtensionImage.swift in Sources */,
 				95A62611282F0CD8007A425E /* Closures.swift in Sources */,
