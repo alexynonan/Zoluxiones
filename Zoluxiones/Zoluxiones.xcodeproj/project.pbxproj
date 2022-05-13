@@ -10,7 +10,6 @@
 		5388EFA981AD09FD61BB15E3 /* Pods_Zoluxiones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59829F2B7385736E0ACD6423 /* Pods_Zoluxiones.framework */; };
 		95A625E9282F09D4007A425E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625E8282F09D4007A425E /* AppDelegate.swift */; };
 		95A625EB282F09D4007A425E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625EA282F09D4007A425E /* SceneDelegate.swift */; };
-		95A625ED282F09D4007A425E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A625EC282F09D4007A425E /* ViewController.swift */; };
 		95A625F3282F09D4007A425E /* Zoluxiones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A625F1282F09D4007A425E /* Zoluxiones.xcdatamodeld */; };
 		95A625F5282F09D6007A425E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A625F4282F09D6007A425E /* Assets.xcassets */; };
 		95A625F8282F09D6007A425E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A625F6282F09D6007A425E /* LaunchScreen.storyboard */; };
@@ -31,6 +30,10 @@
 		95A62629282F11DF007A425E /* MovieWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62628282F11DF007A425E /* MovieWS.swift */; };
 		95A6262C282F124C007A425E /* CDMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6262B282F124C007A425E /* CDMovie.swift */; };
 		95A6262E282F1272007A425E /* MovieBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6262D282F1272007A425E /* MovieBE.swift */; };
+		95A62631282F13C8007A425E /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62630282F13C8007A425E /* MovieCollectionViewCell.swift */; };
+		95A62637282F142F007A425E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62633282F142F007A425E /* LoginViewModel.swift */; };
+		95A62638282F142F007A425E /* MoviewCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */; };
+		95A62639282F142F007A425E /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62636282F142F007A425E /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +42,6 @@
 		95A625E5282F09D4007A425E /* Zoluxiones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoluxiones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A625E8282F09D4007A425E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A625EA282F09D4007A425E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95A625EC282F09D4007A425E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95A625F2282F09D4007A425E /* Zoluxiones.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zoluxiones.xcdatamodel; sourceTree = "<group>"; };
 		95A625F4282F09D6007A425E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A625F7282F09D6007A425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		95A62628282F11DF007A425E /* MovieWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWS.swift; sourceTree = "<group>"; };
 		95A6262B282F124C007A425E /* CDMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovie.swift; sourceTree = "<group>"; };
 		95A6262D282F1272007A425E /* MovieBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieBE.swift; sourceTree = "<group>"; };
+		95A62630282F13C8007A425E /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		95A62633282F142F007A425E /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviewCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		95A62636282F142F007A425E /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +114,6 @@
 				95A625E8282F09D4007A425E /* AppDelegate.swift */,
 				95A625EA282F09D4007A425E /* SceneDelegate.swift */,
 				95A625FF282F0C61007A425E /* iPhone */,
-				95A625EC282F09D4007A425E /* ViewController.swift */,
 				95A625F6282F09D6007A425E /* LaunchScreen.storyboard */,
 				95A625F9282F09D6007A425E /* Info.plist */,
 				95A625F1282F09D4007A425E /* Zoluxiones.xcdatamodeld */,
@@ -180,6 +185,8 @@
 		95A62613282F0DE3007A425E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				95A62632282F142F007A425E /* Login */,
+				95A62634282F142F007A425E /* Movie */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				95A62615282F0E2F007A425E /* Controllers */,
+				95A6262F282F13B8007A425E /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +251,31 @@
 				95A6262B282F124C007A425E /* CDMovie.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		95A6262F282F13B8007A425E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				95A62630282F13C8007A425E /* MovieCollectionViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		95A62632282F142F007A425E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95A62633282F142F007A425E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95A62634282F142F007A425E /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				95A62635282F142F007A425E /* MoviewCollectionViewDataSource.swift */,
+				95A62636282F142F007A425E /* MovieViewModel.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		FDCA3576E7B109AEF771A655 /* Pods */ = {
@@ -375,18 +408,21 @@
 				95A62624282F11CB007A425E /* LoginBL.swift in Sources */,
 				95A6262C282F124C007A425E /* CDMovie.swift in Sources */,
 				95A6261D282F0F30007A425E /* LoginViewController.swift in Sources */,
-				95A625ED282F09D4007A425E /* ViewController.swift in Sources */,
 				95A62625282F11CB007A425E /* MovieBL.swift in Sources */,
 				95A6260C282F0CD8007A425E /* ExtensionDate.swift in Sources */,
 				95A62605282F0CA5007A425E /* CSWebServices.swift in Sources */,
+				95A62637282F142F007A425E /* LoginViewModel.swift in Sources */,
 				95A62627282F11D5007A425E /* ValidationNetwork.swift in Sources */,
 				95A6260F282F0CD8007A425E /* ExtensionUIViewController.swift in Sources */,
 				95A625E9282F09D4007A425E /* AppDelegate.swift in Sources */,
 				95A625EB282F09D4007A425E /* SceneDelegate.swift in Sources */,
+				95A62631282F13C8007A425E /* MovieCollectionViewCell.swift in Sources */,
+				95A62638282F142F007A425E /* MoviewCollectionViewDataSource.swift in Sources */,
 				95A625F3282F09D4007A425E /* Zoluxiones.xcdatamodeld in Sources */,
 				95A6260D282F0CD8007A425E /* WebServicesURL.swift in Sources */,
 				95A6262E282F1272007A425E /* MovieBE.swift in Sources */,
 				95A62610282F0CD8007A425E /* MessageAlert.swift in Sources */,
+				95A62639282F142F007A425E /* MovieViewModel.swift in Sources */,
 				95A6260E282F0CD8007A425E /* ExtensionImage.swift in Sources */,
 				95A62611282F0CD8007A425E /* Closures.swift in Sources */,
 			);

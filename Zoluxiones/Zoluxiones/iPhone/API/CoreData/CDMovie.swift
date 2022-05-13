@@ -50,9 +50,9 @@ class CDMovie: NSObject {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let contexto = appDelegate.persistentContainer.viewContext
         
-        let fetch : NSFetchRequest<MovieBD> = Movie.fetchRequest()
+        let fetch : NSFetchRequest<MovieBD> = MovieBD.fetchRequest()
         
-        let sortName = NSSortDescriptor(key: "vote_average", ascending: true)
+        let sortName = NSSortDescriptor(key: "release_date", ascending: true)
         
         fetch.sortDescriptors = [sortName]
         
