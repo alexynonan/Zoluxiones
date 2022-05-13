@@ -9,7 +9,8 @@ Para la instalación del proyecto, tendras que acceder desde la terminal, hacia 
 
 ```ruby
 pod 'Alamofire', '~> 5.4'
-pod 'SwiftyJSON' 
+pod 'SwiftyJSON'
+pod 'NVActivityIndicatorView', '~> 4.8.0'
 ```
 
 ## Author
