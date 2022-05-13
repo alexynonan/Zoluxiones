@@ -15,6 +15,13 @@
 		95A625F3282F09D4007A425E /* Zoluxiones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A625F1282F09D4007A425E /* Zoluxiones.xcdatamodeld */; };
 		95A625F5282F09D6007A425E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A625F4282F09D6007A425E /* Assets.xcassets */; };
 		95A625F8282F09D6007A425E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A625F6282F09D6007A425E /* LaunchScreen.storyboard */; };
+		95A62605282F0CA5007A425E /* CSWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62604282F0CA5007A425E /* CSWebServices.swift */; };
+		95A6260C282F0CD8007A425E /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62606282F0CD7007A425E /* ExtensionDate.swift */; };
+		95A6260D282F0CD8007A425E /* WebServicesURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62607282F0CD7007A425E /* WebServicesURL.swift */; };
+		95A6260E282F0CD8007A425E /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62608282F0CD7007A425E /* ExtensionImage.swift */; };
+		95A6260F282F0CD8007A425E /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A62609282F0CD7007A425E /* ExtensionUIViewController.swift */; };
+		95A62610282F0CD8007A425E /* MessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6260A282F0CD7007A425E /* MessageAlert.swift */; };
+		95A62611282F0CD8007A425E /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6260B282F0CD8007A425E /* Closures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		95A625F4282F09D6007A425E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A625F7282F09D6007A425E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A625F9282F09D6007A425E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A62604282F0CA5007A425E /* CSWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSWebServices.swift; sourceTree = "<group>"; };
+		95A62606282F0CD7007A425E /* ExtensionDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		95A62607282F0CD7007A425E /* WebServicesURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesURL.swift; sourceTree = "<group>"; };
+		95A62608282F0CD7007A425E /* ExtensionImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
+		95A62609282F0CD7007A425E /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		95A6260A282F0CD7007A425E /* MessageAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
+		95A6260B282F0CD8007A425E /* Closures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		BA804FAC304BDEAF7DA473FD /* Pods-Zoluxiones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoluxiones.release.xcconfig"; path = "Target Support Files/Pods-Zoluxiones/Pods-Zoluxiones.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +89,7 @@
 			children = (
 				95A625E8282F09D4007A425E /* AppDelegate.swift */,
 				95A625EA282F09D4007A425E /* SceneDelegate.swift */,
+				95A625FF282F0C61007A425E /* iPhone */,
 				95A625EC282F09D4007A425E /* ViewController.swift */,
 				95A625EE282F09D4007A425E /* Main.storyboard */,
 				95A625F4282F09D6007A425E /* Assets.xcassets */,
@@ -83,6 +98,52 @@
 				95A625F1282F09D4007A425E /* Zoluxiones.xcdatamodeld */,
 			);
 			path = Zoluxiones;
+			sourceTree = "<group>";
+		};
+		95A625FF282F0C61007A425E /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				95A62600282F0C6B007A425E /* Resources */,
+				95A62601282F0C73007A425E /* ClassesGeneral */,
+				95A62602282F0C7E007A425E /* API */,
+				95A62603282F0C84007A425E /* MVVM */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		95A62600282F0C6B007A425E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95A62601282F0C73007A425E /* ClassesGeneral */ = {
+			isa = PBXGroup;
+			children = (
+				95A6260B282F0CD8007A425E /* Closures.swift */,
+				95A62606282F0CD7007A425E /* ExtensionDate.swift */,
+				95A62608282F0CD7007A425E /* ExtensionImage.swift */,
+				95A62609282F0CD7007A425E /* ExtensionUIViewController.swift */,
+				95A6260A282F0CD7007A425E /* MessageAlert.swift */,
+				95A62607282F0CD7007A425E /* WebServicesURL.swift */,
+			);
+			path = ClassesGeneral;
+			sourceTree = "<group>";
+		};
+		95A62602282F0C7E007A425E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				95A62604282F0CA5007A425E /* CSWebServices.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		95A62603282F0C84007A425E /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		FDCA3576E7B109AEF771A655 /* Pods */ = {
@@ -210,9 +271,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A625ED282F09D4007A425E /* ViewController.swift in Sources */,
+				95A6260C282F0CD8007A425E /* ExtensionDate.swift in Sources */,
+				95A62605282F0CA5007A425E /* CSWebServices.swift in Sources */,
+				95A6260F282F0CD8007A425E /* ExtensionUIViewController.swift in Sources */,
 				95A625E9282F09D4007A425E /* AppDelegate.swift in Sources */,
 				95A625EB282F09D4007A425E /* SceneDelegate.swift in Sources */,
 				95A625F3282F09D4007A425E /* Zoluxiones.xcdatamodeld in Sources */,
+				95A6260D282F0CD8007A425E /* WebServicesURL.swift in Sources */,
+				95A62610282F0CD8007A425E /* MessageAlert.swift in Sources */,
+				95A6260E282F0CD8007A425E /* ExtensionImage.swift in Sources */,
+				95A62611282F0CD8007A425E /* Closures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
